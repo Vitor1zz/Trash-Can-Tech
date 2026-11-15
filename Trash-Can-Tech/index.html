@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExpoClean – Produtos de Limpeza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">Frete grátis em compras a partir de R$ 399</div>
+
+  <header class="header">
+    <a class="logo" href="#">Expo<span>Clean</span></a>
+    <input id="busca" class="busca" type="search" placeholder="Buscar produtos...">
+    <button id="abrirCarrinho" class="btn-carrinho" aria-label="Abrir carrinho">
+      🛒 Carrinho <span id="contador">0</span>
+    </button>
+  </header>
+
+  <nav class="categorias" id="categorias"></nav>
+
+  <section class="hero">
+    <h1>Limpeza completa para a casa toda</h1>
+    <p>Escolha seus produtos e adicione ao carrinho.</p>
+  </section>
+
+  <main class="container">
+    <h2 id="titulo">Todos os produtos</h2>
+    <div class="grade" id="grade"></div>
+    <p id="vazio" class="vazio" hidden>Nenhum produto encontrado.</p>
+  </main>
+
+  <footer class="footer">© 2026 ExpoClean. Todos os direitos reservados.</footer>
+
+  <div id="fundo" class="fundo"></div>
+  <aside id="carrinho" class="carrinho" aria-hidden="true">
+    <div class="carrinho-topo">
+      <h3>Seu carrinho</h3>
+      <button id="fechar" aria-label="Fechar">✕</button>
+    </div>
+    <div id="itens" class="itens"></div>
+    <div class="carrinho-base">
+      <div class="total"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+      <button id="limpar" class="limpar">Esvaziar carrinho</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
